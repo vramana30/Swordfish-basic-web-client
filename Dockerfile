@@ -1,8 +1,8 @@
 FROM node:8
 MAINTAINER snia
-COPY . /
+COPY . /Swordfish-basic-web-client
 RUN node -v && npm -v 
-WORKDIR /
+#WORKDIR /Swordfish-basic-web-client
 #RUN git clone https://github.com/SNIA/Swordfish-basic-web-client.git 
 WORKDIR /Swordfish-basic-web-client
 RUN npm install -g express && npm install -g @angular/cli@1.0.0
