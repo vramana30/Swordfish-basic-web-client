@@ -1,5 +1,6 @@
 FROM node:8
 MAINTAINER snia
+COPY Swordfish-basic-web-client /
 RUN node -v && npm -v 
 WORKDIR /
 #RUN git clone https://github.com/SNIA/Swordfish-basic-web-client.git 
