@@ -2,7 +2,7 @@ FROM node:8
 MAINTAINER snia
 RUN node -v && npm -v 
 WORKDIR /
-//RUN git clone https://github.com/SNIA/Swordfish-basic-web-client.git 
+#RUN git clone https://github.com/SNIA/Swordfish-basic-web-client.git 
 WORKDIR /Swordfish-basic-web-client
 RUN npm install -g express && npm install -g @angular/cli@1.0.0
 RUN echo "angular version is: " && ng -v
