@@ -10,5 +10,5 @@ RUN echo "angular version is: " && ng -v
 RUN npm install && ls  
 WORKDIR /Swordfish-basic-web-client/views
 RUN npm install && ls && ng build && ls
-WORKDIR /Swordfish-basic-web-client
+WORKDIR /
 ENTRYPOINT npm start
