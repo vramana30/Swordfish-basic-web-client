@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: snia-deployment
+spec:
+  replicas: 2
+  selector:
+    app: snia
+  template:
+    metadata:
+      name: snia
+      labels:
+        app: snia
+    spec:
+      containers:
+      - name: snia
+        image: venkatarr/snia
+        ports:
+        - containerPort: 3000
