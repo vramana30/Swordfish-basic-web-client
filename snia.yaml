@@ -1,14 +1,16 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: snia-deployment
+  name: snia
+  labels:
+    app: snia
 spec:
   replicas: 2
   selector:
-    app: snia
+    matchLabels:
+      app: snia
   template:
     metadata:
-      name: snia
       labels:
         app: snia
     spec:
