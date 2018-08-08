@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: snia
-        image: sniaregistry.azurecr.io/sniaa:20
+        image: containeraizationregistry.azurecr.io/sniaa
         ports:
         - containerPort: 3000
         imagePullPolicy: Always
